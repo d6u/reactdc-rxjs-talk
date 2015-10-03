@@ -1,0 +1,22 @@
+{
+  "name": "rxjs-reactdc-meetup-talk",
+  "version": "1.0.0",
+  "description": "Slides and examples for ReactDC meetup talk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d6u/rxjs-reactdc-meetup-talk.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/d6u/rxjs-reactdc-meetup-talk/issues"
+  },
+  "homepage": "https://github.com/d6u/rxjs-reactdc-meetup-talk#readme",
+  "devDependencies": {
+    "web-playground": "0.0.4"
+  }
+}
