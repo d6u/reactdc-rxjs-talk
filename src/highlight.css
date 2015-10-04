@@ -1,8 +1,6 @@
-/*
-
-XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
-
-*/
+/**
+ * Highlight.js XCode Theme
+ */
 
 .hljs {
   display: block;
@@ -10,7 +8,7 @@ XCode style (c) Angel Garcia <angelgarcia.mail@gmail.com>
   padding: 0.5em;
   background: #fff;
   color: black;
-  -webkit-text-size-adjust: none;
+  -webkit-text-size-adjust: 100%;
 }
 
 .hljs-comment {
