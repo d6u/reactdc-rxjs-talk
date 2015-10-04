@@ -1,22 +1,22 @@
 let box = $('#box');
 let body = $('body');
 
-box.on('mousedown', handleMouseEvent);
-body.on('mouseup', handleMouseEvent);
+box.on('mousedown', mouseEventHandler);
+body.on('mouseup', mouseEventHandler);
 
-let mousemoveHandler;
+let mouseMoveHandler;
 
-function handleMouseEvent(event) {
+function mouseEventHandler(event) {
   if (event.type !== 'mousedown') {
-    body.off('mousemove', mousemoveHandler);
-    mousemoveHandler = null;
+    body.off('mousemove', mouseMoveHandler);
+    mouseMoveHandler = null;
     return;
   }
 
   let offsetX = event.pageX - box[0].offsetLeft;
   let offsetY = event.pageY - box[0].offsetTop;
 
-  mousemoveHandler = ({pageX, pageY}) => {
+  mouseMoveHandler = ({pageX, pageY}) => {
     let x = pageX - offsetX;
     let y = pageY - offsetY;
 
@@ -24,5 +24,5 @@ function handleMouseEvent(event) {
     box[0].style.top = `${y}px`;
   };
 
-  body.on('mousemove', mousemoveHandler);
+  body.on('mousemove', mouseMoveHandler);
 }
