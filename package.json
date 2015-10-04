@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/d6u/rxjs-reactdc-meetup-talk#readme",
   "dependencies": {
+    "classnames": "^2.1.5",
     "highlight.js": "^8.8.0",
     "history": "^1.11.1",
     "ramda": "^0.17.1",

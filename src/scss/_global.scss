@@ -23,6 +23,48 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+a {
+  color: #3498DB;
+}
+
+strong {
+  font-weight: 600;
+}
+
+ul {
+  margin-bottom: 20px;
+  font-size: 24px;
+  list-style-type: disc;
+  padding-left: 2em;
+}
+
+ol {
+  margin-bottom: 20px;
+  font-size: 24px;
+  list-style-type: decimal;
+  padding-left: 2em;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+pre {
+  margin-bottom: 20px;
+}
+
 code {
   font-family: Inconsolata, monospace;
+  font-size: 20px;
 }

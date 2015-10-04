@@ -4,6 +4,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
+
 }
 
 .o_slide__inner {
@@ -15,5 +16,14 @@
   transform: translate3d(-50%, -50%, 0);
   width: 800px;
   height: 450px;
-  padding: 20px;
+  padding: 40px;
+
+  &__transparent {
+    background-color: transparent;
+    padding: 0;
+  }
+}
+
+.o_slide_space {
+  height: 40px;
 }
