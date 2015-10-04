@@ -14,7 +14,7 @@ export const Slide = ({slideScale, currentSlide, index, children}) => {
   }
 
   return (
-    <Motion defaultStyle={{x: 0}} style={{x: spring(x)}}>
+    <Motion defaultStyle={{x: x}} style={{x: spring(x)}}>
       {interpolated =>
         <div className={css.o_slide} style={{transform: `translate3d(${interpolated.x}%, 0, 0)`}}>
           <div

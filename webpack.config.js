@@ -1,5 +1,7 @@
 'use strict';
 
+var webpack = require('webpack');
+
 module.exports = {
   entry: './src/js/index.js',
 
@@ -22,5 +24,9 @@ module.exports = {
         loader: 'babel?optional[]=es7.functionBind'
       }
     ]
-  }
+  },
+
+  // plugins: [
+  //   new webpack.optimize.UglifyJsPlugin({minimize: true}),
+  // ]
 };

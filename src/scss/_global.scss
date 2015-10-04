@@ -7,4 +7,22 @@ body {
   width: 100vw;
   background-color: #8E44AD;
   overflow: hidden;
+  font-family: Lato, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+// Content Style
+
+h1, h2, h3 {
+  font-family: Francois One, sans-serif;
+}
+
+h1 {
+  @extend .h_vertical_center;
+  font-size: 56px;
+  text-align: center;
+}
+
+code {
+  font-family: Inconsolata, monospace;
 }
