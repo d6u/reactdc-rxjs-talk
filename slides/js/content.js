@@ -101,11 +101,15 @@ sc.onNext(2);`} />
     </Slide>,
 
     <Slide {...{slideScale, currentSlide}} index={13}>
-      <h2>Basic Flux</h2>
+      <h2>Basic Flux with Rx</h2>
+      <a href="https://github.com/d6u/rx-chat" target="_blank">Rx Chat Example</a>
     </Slide>,
 
     <Slide {...{slideScale, currentSlide}} index={14}>
       <h2>River Flux</h2>
+      <a href="https://github.com/d6u/River" target="_blank">River</a>
+      <br/>
+      <a href="https://github.com/d6u/river-chat" target="_blank">River Chat Example</a>
     </Slide>,
 
     <Slide {...{slideScale, currentSlide}} index={15}>
