@@ -1,8 +1,10 @@
 # Reactive Programing with RxJS
 
-## ![Reactive Stream](/source/img/reactive-stream.png)
+## ![Reactive Stream](/slides/img/reactive-stream.png)
 
-## What is Reactive Programing
+_Image is from [The introduction to Reactive Programming you've been missing](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754)_
+
+## What is Reactive Programing?
 
 ```js
 let a = b + c;
@@ -15,11 +17,13 @@ After `a` is assigned, changes of `b` or `c` will have no affect on `a`.
 b + c -> a
 ```
 
-Future changes of `b` or `c` will affect value of `a`.
+Future changes of `b` or `c` will change the value of `a`.
 
-## Spreadsheet App is a Very Typical Example
+## Spreadsheet App Is a Typical Example
 
-## Fin
+![Spreadsheet App](/slides/img/spreadsheet-app.jpg)
+
+## ![The End](/slides/img/the-end.jpg)
 
 ## Tools to Implement Reactive Programing in JavaScript
 
@@ -30,13 +34,13 @@ Reactive programing is not new
 - Node.js streams
 - **Reactive Extension**
 
-## RxJS
+## [RxJS](http://reactivex.io/)
 
 Reactive extension are a family of libraries that implement similar API in many programing language. RxJS is the one for JavaScript.
 
 ## Subject and Observable
 
-> Demo
+_[Demo]()_
 
 ```js
 // Compose observables
@@ -54,11 +58,11 @@ c.onNext(2);
 
 _Subject is a special kind of observable._
 
-## Come back to the pic of Reactive Programing
+## ![Reactive Stream](/slides/img/reactive-stream.png)
 
-## What if We Subscribe to DOM Events
+## What If We Can Subscribe to DOM Events
 
-> Demo
+_[Demo]()_
 
 ```js
 Rx.Observable.fromEvent($('#text'), 'keypress')
