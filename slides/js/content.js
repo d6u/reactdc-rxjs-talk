@@ -48,10 +48,23 @@ b + c -> a`} />
 
     <Slide {...{slideScale, currentSlide}} index={6}>
       <h2>RxJS</h2>
+      <p>Reactive extension are a family of libraries that implement similar API in many programing language. RxJS is the one for JavaScript.</p>
     </Slide>,
 
     <Slide {...{slideScale, currentSlide}} index={7}>
       <h2>Subject and Observable</h2>
+      <Code code={`// Compose observables
+let sb = new Rx.Subject();
+let sc = new Rx.Subject();
+let sa = Rx.Observable.combineLatest(sb, sc, (b, c) => b + c);
+
+// Subscribe to changes
+sa.subscribeOnNext((a) => console.log(a));
+
+// Change value of Subjects
+b.onNext(1);
+c.onNext(2);`} />
+      <p><em>Subject is a special kind of observable.</em></p>
     </Slide>,
 
     <Slide {...{slideScale, currentSlide}} index={8}>
@@ -60,6 +73,9 @@ b + c -> a`} />
 
     <Slide {...{slideScale, currentSlide}} index={9}>
       <h2>What if We Subscribe to DOM Events</h2>
+      <Code code={`Rx.Observable.fromEvent($('#text'), 'keypress')
+  .map(event => event.target.value)
+  .subscribeOnNext(val => console.log(val));`} />
     </Slide>,
 
     <Slide {...{slideScale, currentSlide}} index={10}>
@@ -101,13 +117,14 @@ b + c -> a`} />
     </Slide>,
 
     <Slide {...{slideScale, currentSlide}} index={16}>
-      <h2>Follow me on Twitter</h2>
+      <h2>Follow me</h2>
+      <p><a href="https://twitter.com/daiweilu">@daiweilu</a></p>
     </Slide>,
 
     <Slide {...{slideScale, currentSlide}} index={17}>
       <h1>Thank You!</h1>
     </Slide>,
-  ]
+  ];
 
   return (
     <div>{slides}</div>
