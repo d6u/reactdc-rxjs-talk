@@ -2,12 +2,16 @@
 
 var webpack = require('webpack');
 
+var prodPlugins = [
+  new webpack.optimize.UglifyJsPlugin({minimize: true}),
+];
+
 module.exports = {
-  entry: './src/js/index.js',
+  entry: './slides/js/index.js',
 
   output: {
     filename: 'bundle.js',
-    path: './src',
+    path: './public',
   },
 
   devtool: 'source-map',
@@ -26,7 +30,5 @@ module.exports = {
     ]
   },
 
-  // plugins: [
-  //   new webpack.optimize.UglifyJsPlugin({minimize: true}),
-  // ]
+  plugins: process.env.NODE_ENV === 'production' ? prodPlugins : null,
 };

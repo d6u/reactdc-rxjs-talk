@@ -4,7 +4,10 @@
   "description": "Slides and examples for ReactDC meetup talk",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:copy": "cp -v -R slides/index.html slides/highlight.css slides/bundle.* slides/img public",
+    "build:js": "webpack",
+    "prestart": "npm run build:copy",
+    "start": "webpack -w & browser-sync start --server public --files public/*"
   },
   "repository": {
     "type": "git",
@@ -30,6 +33,7 @@
   "devDependencies": {
     "autoprefixer-loader": "^3.1.0",
     "babel-loader": "^5.3.2",
+    "browser-sync": "^2.9.8",
     "css-loader": "^0.19.0",
     "node-sass": "^3.3.3",
     "sass-loader": "^3.0.0",

@@ -9,7 +9,7 @@ const Content = ({slideScale, currentSlide}) => {
     </Slide>,
 
     <Slide {...{slideScale, currentSlide}} index={1}>
-      <img className={css.slide_1_img} src="/img/reactive_programing.png"/>
+      <img className={css.slide_1_img} src="/img/reactive-stream.png"/>
     </Slide>,
 
     <Slide {...{slideScale, currentSlide}} index={2}>
@@ -25,13 +25,13 @@ b + c -> a`} />
     <Slide {...{slideScale, currentSlide}} index={3}>
       <h2>Spreadsheet App is a Very Typical Example</h2>
       <p className={css.h_horizontal_center}>
-        <img className={css.slide_img_excel_spreadsheet} src="/img/excel_spreadsheet.jpg"/>
+        <img className={css.slide_img_excel_spreadsheet} src="/img/spreadsheet-app.jpg"/>
       </p>
     </Slide>,
 
     <Slide {...{slideScale, currentSlide}} index={4} transparent={true}>
       <p className={`${css.h_horizontal_center} ${css.h_full_height}`}>
-        <img className={css.h_full_height} src="/img/the_end.jpg"/>
+        <img className={css.h_full_height} src="/img/the-end.jpg"/>
       </p>
     </Slide>,
 
@@ -55,7 +55,7 @@ b + c -> a`} />
     </Slide>,
 
     <Slide {...{slideScale, currentSlide}} index={8}>
-      <img className={css.slide_1_img} src="/img/reactive_programing.png"/>
+      <img className={css.slide_1_img} src="/img/reactive-stream.png"/>
     </Slide>,
 
     <Slide {...{slideScale, currentSlide}} index={9}>
