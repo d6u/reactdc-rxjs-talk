@@ -102,14 +102,13 @@ sc.onNext(2);`} />
 
     <Slide {...{slideScale, currentSlide}} index={13}>
       <h2>Basic Flux with Rx</h2>
-      <a href="https://github.com/d6u/rx-chat" target="_blank">Rx Chat Example</a>
+      <p><a href="https://github.com/d6u/rx-chat" target="_blank">Rx Chat Example</a></p>
     </Slide>,
 
     <Slide {...{slideScale, currentSlide}} index={14}>
       <h2>River Flux</h2>
-      <a href="https://github.com/d6u/River" target="_blank">River</a>
-      <br/>
-      <a href="https://github.com/d6u/river-chat" target="_blank">River Chat Example</a>
+      <p><a href="https://github.com/d6u/River" target="_blank">River</a></p>
+      <p><a href="https://github.com/d6u/river-chat" target="_blank">River Chat Example</a></p>
     </Slide>,
 
     <Slide {...{slideScale, currentSlide}} index={15}>
@@ -125,6 +124,7 @@ sc.onNext(2);`} />
     <Slide {...{slideScale, currentSlide}} index={16}>
       <h2>Follow me</h2>
       <p><a href="https://twitter.com/daiweilu">@daiweilu</a></p>
+      <p><a href="https://github.com/d6u">Github d6u</a></p>
     </Slide>,
 
     <Slide {...{slideScale, currentSlide}} index={17}>
