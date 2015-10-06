@@ -56,14 +56,16 @@ b + c -> a`} />
       <Code code={`// Compose observables
 let sb = new Rx.Subject();
 let sc = new Rx.Subject();
-let sa = Rx.Observable.combineLatest(sb, sc, (b, c) => b + c);
+let sa = Rx.Observable
+  .combineLatest(sb, sc)
+  .map(([b, c]) => b + c);
 
 // Subscribe to changes
 sa.subscribeOnNext((a) => console.log(a));
 
 // Change value of Subjects
-b.onNext(1);
-c.onNext(2);`} />
+sb.onNext(1);
+sc.onNext(2);`} />
       <p><em>Subject is a special kind of observable.</em></p>
     </Slide>,
 

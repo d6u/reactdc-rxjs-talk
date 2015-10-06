@@ -144,34 +144,34 @@ function mouseEventHandler(event) {
 
 3. Composable (easy to add new features)
 
-> Demo Adding Features to
+    > Demo Adding Features to
 
 4. Disposable
 
-> Demo
+    > Demo
 
-```js
-let ajax = Rx.Observable.create(function (observer) {
-  let jqXHR = $.get(url);
-  jqXHR
-    .then(data => {
-      observer.onNext(data);
-      observer.onCompleted();
-    })
-    .catch(err => observer.onError(data));
-  return function dispose() {
-    jqXHR.abort();
-  };
-});
+    ```js
+    let ajax = Rx.Observable.create(function (observer) {
+      let jqXHR = $.get(url);
+      jqXHR
+        .then(data => {
+          observer.onNext(data);
+          observer.onCompleted();
+        })
+        .catch(err => observer.onError(data));
+      return function dispose() {
+        jqXHR.abort();
+      };
+    });
 
-let disposable = ajax.subscribe();
+    let disposable = ajax.subscribe();
 
-disposable.dispose(); // Will trigger `abort`
-```
+    disposable.dispose(); // Will trigger `abort`
+    ```
 
 5. **One Direction Data Flow**
 
-Sounds like **Flux**?
+    Sounds like **Flux**?
 
 ## Basic Flux
 
