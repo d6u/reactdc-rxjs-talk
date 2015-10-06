@@ -6,6 +6,7 @@
   "scripts": {
     "build:copy": "cp -v -R slides/index.html slides/highlight.css slides/bundle.* slides/img public",
     "build:js": "webpack",
+    "build": "npm run build:copy && npm run build:js",
     "prestart": "npm run build:copy",
     "start": "webpack -w & browser-sync start --server public --files public/*"
   },
